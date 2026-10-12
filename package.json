@@ -1,0 +1,44 @@
+{
+  "name": "webperfrobot",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "webPERFrobot \u2014 kan\u0131ta dayal\u0131 web denetimi",
+  "engines": {
+    "node": ">=22.19"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/audit.js"
+    },
+    "./report": {
+      "types": "./src/report.d.ts",
+      "import": "./src/report.js"
+    }
+  },
+  "bin": {
+    "webperfrobot": "./bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/audit.js && node --test"
+  },
+  "dependencies": {
+    "cheerio": "1.1.2",
+    "undici": "^8.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tialkan/webPERFrobot.git"
+  },
+  "homepage": "https://tezatlas.com/webperfrobot",
+  "types": "./src/index.d.ts"
+}

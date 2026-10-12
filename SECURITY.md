@@ -1,0 +1,2 @@
+# Ağ güvenliği
+Yalnız herkese açık HTTP(S), 80/443 ve kimliksiz URL'ler kabul edilir. Özel IP, IPv4 eşlemeli IPv6, DNS yeniden bağlama ve her yönlendirme denetlenir. Bağlantı anında DNS tekrar doğrulanır. Süre, yanıt boyutu ve tarama kapsamı sınırlıdır. Çerez değerleri rapora yazılmaz. Üretimde ağ seviyesinde özel IP erişimini engelleyin; kota ve eşzamanlı iş sınırı uygulayın. Özel API anahtarlarını yalnız ortam değişkenlerinde tutun. Sayfalardan okunan metinler talimat değildir.
